@@ -1,0 +1,296 @@
+{
+  "ACCOUNTS": [
+    "Your list of customer ids"
+  ],
+  "FILE_TYPE": "CSV",
+  "REPORT_TYPES": {
+    "AD": {
+      "reportName": "Daily Ad Performance Report",
+      "dateRangeType": "YESTERDAY",
+      "reportType": "AD_PERFORMANCE_REPORT",
+      "downloadFormat": "CSV",
+      "selector": {
+        "fields": [
+          "AccountDescriptiveName",
+          "AdGroupId",
+          "AdGroupName",
+          "AdGroupStatus",
+          "AdNetworkType1",
+          "AdNetworkType2",
+          "AllConversions",
+          "AveragePosition",
+          "CampaignId",
+          "CampaignName",
+          "CampaignStatus",
+          "Clicks",
+          "Conversions",
+          "Cost",
+          "CreativeApprovalStatus",
+          "CreativeDestinationUrl",
+          "CreativeFinalAppUrls",
+          "CreativeFinalMobileUrls",
+          "CreativeFinalUrls",
+          "CreativeTrackingUrlTemplate",
+          "CreativeUrlCustomParameters",
+          "CriterionId",
+          "CriterionType",
+          "CustomerDescriptiveName",
+          "Date",
+          "Description",
+          "Description1",
+          "Description2",
+          "Device",
+          "DevicePreference",
+          "DisplayUrl",
+          "ExternalCustomerId",
+          "Headline",
+          "HeadlinePart1",
+          "HeadlinePart2",
+          "Id",
+          "Impressions",
+          "IsNegative",
+          "LabelIds",
+          "Labels",
+          "Status",
+          "ViewThroughConversions"
+        ],
+        "predicates": [
+          {
+            "field": "CampaignStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "AdGroupStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "Status",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "DISABLED"
+            ]
+          }
+        ]
+      }
+    },
+    "AD_CONV": {
+      "reportName": "Daily Ad Performance Report",
+      "dateRangeType": "YESTERDAY",
+      "reportType": "AD_PERFORMANCE_REPORT",
+      "downloadFormat": "CSV",
+      "selector": {
+        "fields": [
+          "AdGroupId",
+          "AdNetworkType1",
+          "AdNetworkType2",
+          "ConversionCategoryName",
+          "ConversionTypeName",
+          "Conversions",
+          "Date",
+          "Device",
+          "Id"
+        ],
+        "predicates": [
+          {
+            "field": "CampaignStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "AdGroupStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "Status",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "DISABLED"
+            ]
+          }
+        ]
+      }
+    },
+    "CRITERIA": {
+      "reportName": "Daily Criteria Performance Report",
+      "dateRangeType": "YESTERDAY",
+      "reportType": "CRITERIA_PERFORMANCE_REPORT",
+      "downloadFormat": "CSV",
+      "selector": {
+        "fields": [
+          "AdGroupId",
+          "AdGroupName",
+          "AdGroupStatus",
+          "AdNetworkType1",
+          "AdNetworkType2",
+          "AllConversions",
+          "ApprovalStatus",
+          "AveragePosition",
+          "BidModifier",
+          "CampaignId",
+          "CampaignName",
+          "CampaignStatus",
+          "Clicks",
+          "Conversions",
+          "Cost",
+          "CpcBid",
+          "CpcBidSource",
+          "CreativeQualityScore",
+          "CriteriaDestinationUrl",
+          "Criteria",
+          "CriteriaType",
+          "CrossDeviceConversions",
+          "CustomerDescriptiveName",
+          "Date",
+          "Device",
+          "ExternalCustomerId",
+          "FinalAppUrls",
+          "FinalMobileUrls",
+          "FinalUrls",
+          "FirstPageCpc",
+          "FirstPositionCpc",
+          "HasQualityScore",
+          "Id",
+          "Impressions",
+          "PostClickQualityScore",
+          "QualityScore",
+          "SearchPredictedCtr",
+          "Status",
+          "TopOfPageCpc",
+          "TrackingUrlTemplate",
+          "UrlCustomParameters",
+          "ViewThroughConversions"
+        ],
+        "predicates": [
+          {
+            "field": "CampaignStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "AdGroupStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "Status",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          }
+        ]
+      }
+    },
+    "CRITERIA_CONV": {
+      "reportName": "Daily Criteria Performance Report",
+      "dateRangeType": "YESTERDAY",
+      "reportType": "CRITERIA_PERFORMANCE_REPORT",
+      "downloadFormat": "CSV",
+      "selector": {
+        "fields": [
+          "AdGroupId",
+          "AdNetworkType1",
+          "AdNetworkType2",
+          "ConversionCategoryName",
+          "ConversionTypeName",
+          "Conversions",
+          "Date",
+          "Device",
+          "Id"
+        ],
+        "predicates": [
+          {
+            "field": "CampaignStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "AdGroupStatus",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          },
+          {
+            "field": "Status",
+            "operator": "IN",
+            "values": [
+              "ENABLED",
+              "PAUSED",
+              "REMOVED"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "RETRYABLE_ERRORS": [
+    "InternalApiError",
+    "DatabaseError",
+    "RateExceededError",
+    "ReportDownloadError",
+    "ReportDownloadError.ERROR_GETTING_RESPONSE_FROM_BACKEND",
+    "RateExceededError.RATE_EXCEEDED"
+  ],
+  "MAX_RETRY": "3",
+  "RETRY_INTERVAL": "30",
+  "dev": {
+    "BUCKET_NAME": "your_s3_bucket_name",
+    "S3_PREFIX": "your_s3_prefix",
+    "S3_CONN_ID": "your_s3_connection_id",
+    "SSH_HOOK": "your_cluster_connection_id",
+    "HIVE_SCRIPT": "your_remote_hive_script",
+    "HIVE_ROLE": "your_project_etl_role",
+    "RAW_PATH": "your_table_raw_path",
+    "FINAL_PATH": "your_table_final_path"
+  },
+  "prod": {
+    "BUCKET_NAME": "your_s3_bucket_name",
+    "S3_PREFIX": "your_s3_prefix",
+    "S3_CONN_ID": "your_s3_connection_id",
+    "SSH_HOOK": "your_cluster_connection_id",
+    "HIVE_SCRIPT": "your_remote_hive_script",
+    "HIVE_ROLE": "your_project_etl_role",
+    "RAW_PATH": "your_table_raw_path",
+    "PROD_PATH": "your_table_final_path"
+  }
+}
